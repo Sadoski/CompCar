@@ -5,6 +5,6 @@
     $id = $_GET['id'];
     
     $anuncio = new Anuncios();
-    $anuncio->updateVendido($id,$foto);
+    $anuncio->updateVendido($id);
     header('Location: user.php');
     ?>

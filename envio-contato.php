@@ -34,7 +34,7 @@
  
      //Define os destinatário(s)
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-     $mail->AddAddress('', 'Teste Locaweb');
+     $mail->AddAddress('jefferson_sadoski@hotmail.com', 'Teste Locaweb');
  
      //Campos abaixo são opcionais 
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

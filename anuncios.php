@@ -50,19 +50,19 @@ class Anuncios {
         return $result;
     }
     
-    public Function updateVendido($situacao){
-        $sql = "UPDATE veiculos SET situacao = ?";
+    public Function updateVendido($id){
+        $sql = "UPDATE veiculos SET situacao = 0 WHERE id_veiculos = ?";
         $update= new PDOConnect;
         $conn=$update->conexao()->prepare($sql);
-        $conn->bindValue(1,$situacao);
+        $conn->bindValue(1,$id);
         $conn->execute();
     }
     
-     public Function excluirAnuncio($situacao){
-        $sql = "DELETE FROM usuarios WHERE id_usuario = ?";
+     public Function excluirAnuncio($id){
+        $sql = "DELETE FROM veiculos WHERE id_veiculos = ?";
         $delete= new PDOConnect;
         $conn=$delete->conexao()->prepare($sql);
-        $conn->bindValue(1,$situacao);
+        $conn->bindValue(1,$id);
         $conn->execute();
     }
     

@@ -61,8 +61,8 @@ try {
     
      //Define o remetente
      // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=    
-     $mail->SetFrom('', 'CompCar'); //Seu e-mail
-     $mail->AddReplyTo('', 'CompCar'); //Seu e-mail
+     $mail->SetFrom('jefferson_sadoski@hotmail.com', 'CompCar'); //Seu e-mail
+     $mail->AddReplyTo('jefferson_sadoski@hotmail.com', 'CompCar'); //Seu e-mail
      $mail->Subject = 'Alteração de senha';//Assunto do e-mail
  
  
